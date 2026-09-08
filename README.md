@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive weather application built with React that allows users to search for real-time weather information for any city.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+* Search weather by city name
+* Display current temperature
+* Display humidity level
+* Display wind speed
+* Dynamic weather icons
+* Real-time weather data from a Weather API
+* Responsive user interface
+* Error handling for invalid city searches
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* React JS
+* JavaScript
+* CSS
+* Weather API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## What I Practiced
 
-### `npm test`
+This project was built as a practical React learning project. It helped me practice:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* React Components
+* `useState` Hook
+* API Integration
+* Fetching External Data
+* Handling User Input
+* Conditional Rendering
+* Event Handling
+* Working with JSON Data
+* CSS Styling
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Make sure you have Node.js and npm installed.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/Nidal15-ds/weather-app.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Navigate to the project directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+cd weather-app
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Install dependencies:
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Start the application:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run dev 
+```
 
-### Code Splitting
+The application will run on:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```text
+http://localhost:3000
+```
 
-### Analyzing the Bundle Size
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```text
+weather-app/
+│
+├── node_modules/              # Dependencies (ignored)
+├── dist/                      # Build output (generated, ignored)
+├── public/                    # Static assets served as-is
+│   ├── favicon.svg            # Site favicon
+│   └── icons.svg              # Shared SVG icons
+│
+├── src/                       # Source code
+│   ├── assets/                # Static image assets
+│   │   ├── clear.png          # Weather icons
+│   │   ├── cloud.png
+│   │   ├── drizzle.png
+│   │   ├── humidity.png
+│   │   ├── rain.png
+│   │   ├── search.png
+│   │   ├── snow.png
+│   │   └── wind.png
+│   │
+│   ├── components/
+│   │   ├── Weather.css        # Weather component styles
+│   │   └── Weather.jsx        # Main weather widget component
+│   │
+│   ├── App.jsx                # Root app component
+│   ├── main.jsx               # Entry point (ReactDOM render)
+│   └── index.css              # Global styles
+│
+├── .env                       # Environment variables (API key - ignored)
+├── .gitignore                 # Git ignore rules
+├── eslint.config.js           # ESLint configuration
+├── index.html                 # HTML entry point
+├── package.json               # Dependencies & scripts
+├── package-lock.json          # Locked dependency versions
+├── vite.config.js             # Vite configuration
+└── README.md
 
-### Making a Progressive Web App
+## Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Add weather forecast for multiple days
+* Add loading state
+* Improve error handling
+* Detect user's current location
+* Add dark/light mode
+* Save recent searches
 
-### Advanced Configuration
+## Learning Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project was created as part of my React learning journey to practice working with APIs and managing application state.
 
-### Deployment
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Nidal**
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+GitHub:https://github.com/Nidal15-ds
