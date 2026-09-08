@@ -69,7 +69,7 @@ npm run dev
 The application will run on:
 
 ```text
-http://localhost:3000
+http://localhost:5173
 ```
 
 ## Project Structure
