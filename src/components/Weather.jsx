@@ -52,7 +52,7 @@ function Weather() {
      const icon = allIcons[data.weather[0].icon] || clear_icon ;
      setWeatherData({
       humidity : data.main.humidity,
-      windSpeed : data.main.speed,
+      windSpeed : Math.round(data.wind.speed),
       tempurature :( Math.floor(data.main.temp)), //only integer value hna
       location : data.name ,
       icon : icon
@@ -82,7 +82,7 @@ function Weather() {
           <img src={humidity_icon} alt="" />
           <div>
             <p>{weatherData.humidity}%</p>
-            <span>Humididty</span>
+            <span>Humidity</span>
           </div>
         </div>
         <div className="col">

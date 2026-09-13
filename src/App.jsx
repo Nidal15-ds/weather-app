@@ -1,7 +1,5 @@
-import React from 'react'
 import Weather from './components/Weather'
-import './index.css';
-import search_icon from './assets/search.png'
+import './index.css'
 
 const App = () => {
   return (

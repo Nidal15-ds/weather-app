@@ -1,78 +1,90 @@
-
 .weather{
-place-self: center;    
-padding: 40px;
-border-radius: 10px;
-background-image: linear-gradient(45deg ,#2f4680 ,#500ae4 );
-display: flex;
-flex-direction: column;
-align-items: center;
-
+  place-self: center;
+  width: min(100%, 480px);
+  max-width: 92vw;
+  padding: clamp(20px, 6vw, 40px);
+  border-radius: 16px;
+  background-image: linear-gradient(45deg, #2f4680, #500ae4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
 }
 
 .search-bar{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
+    width: 100%;
 }
 
 .search-bar input{
-    height: 50px;
+    flex: 1;
+    min-width: 0;
+    max-width: 300px;
+    height: clamp(44px, 6vw, 50px);
     border: none;
     outline: none;
     border-radius: 40px;
     padding-left: 25px;
     color: #626262;
     background: #ebfffc;
-    font-size: 18px;
+    font-size: clamp(16px, 4vw, 18px);
 }
 .search-bar img{
-    width: 50px;
-    padding: 15px;
+    flex-shrink: 0;
+    width: clamp(42px, 6vw, 50px);
+    padding: 12px;
     border-radius: 50%;
     background: #ebfffc;
     cursor: pointer;
 }
 
 .weather-icon{
-   width: 150px;
-   margin: 30px 0;
-
+   width: clamp(110px, 40vw, 150px);
+   margin: clamp(20px, 6vw, 30px) 0;
 }
 
 .temperature{
  color: #fff;
- font-size: 80px;
+ font-size: clamp(48px, 17vw, 80px);
  line-height: 1;
-
 }
 .location{
  color: #fff;
- font-size: 40px;
-
+ font-size: clamp(24px, 8vw, 40px);
 }
 
 .weather-data{
    width: 100%;
-   margin-top: 40px;
+   margin-top: clamp(28px, 8vw, 40px);
    color: #fff;
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 20px;
 }
 
 .weather-data .col{
    display: flex;
    align-items: flex-start;
    gap: 12px;
-   font-size: 22px;
+   font-size: clamp(16px, 4.5vw, 22px);
 }
 .weather-data .col span{
     display: block;
-    font-size: 16px;
+    font-size: clamp(12px, 3.5vw, 16px);
 
 }
 .weather-data .col img{
-   width: 26px;
+   width: clamp(20px, 6vw, 26px);
    margin-top: 10px;
-   
+}
+
+@media (max-width: 360px) {
+  .weather-data{
+    justify-content: center;
+    gap: 24px;
+  }
 }
